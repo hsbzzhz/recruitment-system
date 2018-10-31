@@ -1,0 +1,83 @@
+[
+  {
+    "model": "users.skill",
+    "pk": 1,
+    "fields": {
+      "name": "Java",
+      "skill_type": "1",
+      "description": ""
+    }
+  },
+  {
+    "model": "users.skill",
+    "pk": 2,
+    "fields": {
+      "name": "HTML/CSS",
+      "skill_type": "1",
+      "description": ""
+    }
+  },
+  {
+    "model": "users.skill",
+    "pk": 3,
+    "fields": {
+      "name": "JavaScript",
+      "skill_type": "1",
+      "description": ""
+    }
+  },
+  {
+    "model": "users.skill",
+    "pk": 4,
+    "fields": {
+      "name": "Leadership",
+      "skill_type": "2",
+      "description": ""
+    }
+  },
+  {
+    "model": "users.skill",
+    "pk": 5,
+    "fields": {
+      "name": "PHP",
+      "skill_type": "1",
+      "description": ""
+    }
+  },
+  {
+    "model": "users.skill",
+    "pk": 6,
+    "fields": {
+      "name": "AngularJS",
+      "skill_type": "1",
+      "description": ""
+    }
+  },
+  {
+    "model": "users.skill",
+    "pk": 7,
+    "fields": {
+      "name": "Teamwork",
+      "skill_type": "2",
+      "description": ""
+    }
+  },
+  {
+    "model": "users.skill",
+    "pk": 8,
+    "fields": {
+      "name": "Collaborative",
+      "skill_type": "2",
+      "description": ""
+    }
+  },
+  {
+    "model": "users.skill",
+    "pk": 9,
+    "fields": {
+      "name": "jQuery",
+      "skill_type": "1",
+      "description": ""
+    }
+  }
+]

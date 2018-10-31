@@ -1,0 +1,65 @@
+[
+{
+    "model": "users.profile",
+    "pk": 1,
+    "fields": {
+        "location": "Melbourne",
+        "about": "",
+        "phone": "0416783465" ,
+        "birthday": "1985-09-20",
+        "linked_in_website": "",
+        "twitter_website": "",
+        "facebook_website": "",
+        "date_created": "2018-07-30 15:25" , 
+        "date_updated": "2018-09-20 16:00" ,
+        "user": 1,
+        "owned_skills": [
+            2,
+            3,
+            7
+        ]
+    }
+},
+{
+    "model": "users.profile",
+    "pk": 2,
+    "fields": {
+        "location": "Sydney",
+        "about": "",
+        "phone": "0412567465",
+        "birthday": "1990-08-20",
+        "linked_in_website": "",
+        "twitter_website": "",
+        "facebook_website": "",
+        "date_created": "2018-09-20 09:00" , 
+        "date_updated": "2018-09-20 10:00" ,
+        "user": 2,
+        "owned_skills": [
+            2,
+            3,
+            7
+        ]
+    }
+},
+{
+    "model": "users.profile",
+    "pk": 3,
+    "fields": {
+        "location": "Adelaide",
+        "about": "",
+        "phone": "0418743215",
+        "birthday": "1995-07-20",
+        "linked_in_website": "",
+        "twitter_website": "",
+        "facebook_website": "",
+        "date_created": "2018-09-21 12:15" , 
+        "date_updated": "2018-09-23 13:53" ,
+        "user": 3,
+        "owned_skills": [
+            2,
+            3,
+            7
+        ]
+    }
+}
+]

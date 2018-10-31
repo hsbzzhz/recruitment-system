@@ -1,0 +1,21 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+django = "==2.0"
+djangorestframework = "*"
+djangorestframework-jwt = "*"
+pillow = "*"
+django-rest-auth = "*"
+django-cors-headers = "*"
+mysqlclient = "*"
+django-filter = "*"
+django-taggit = "*"
+django-taggit-serializer = "==0.1.7"
+
+[dev-packages]
+
+[requires]
+python_version = "3.6"

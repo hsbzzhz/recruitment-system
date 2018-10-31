@@ -1,0 +1,481 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"O",
+				"OneToOneField"
+			],
+			[
+				"va",
+				"validated_data"
+			],
+			[
+				"trans",
+				"transcript"
+			],
+			[
+				"Trans",
+				"Transcript"
+			],
+			[
+				"re",
+				"request"
+			],
+			[
+				"detail",
+				"detail_route"
+			],
+			[
+				"U",
+				"User"
+			],
+			[
+				"create",
+				"create_profile"
+			],
+			[
+				"de",
+				"default"
+			],
+			[
+				"c",
+				"commit"
+			],
+			[
+				"V",
+				"CreateView"
+			],
+			[
+				"C",
+				"CASCADE"
+			],
+			[
+				"d",
+				"dispatch"
+			],
+			[
+				"form",
+				"form_valid"
+			],
+			[
+				"nav",
+				"nav-item"
+			],
+			[
+				"arti",
+				"artical_list"
+			],
+			[
+				"text",
+				"text-muted"
+			],
+			[
+				"user",
+				"username"
+			],
+			[
+				"get",
+				"get_user_model"
+			],
+			[
+				"m",
+				"main\tTag"
+			],
+			[
+				"Cus",
+				"CustomUserAdmin"
+			],
+			[
+				"Custom",
+				"CustomUser"
+			],
+			[
+				"s",
+				"self"
+			],
+			[
+				"T",
+				"TemplateView"
+			],
+			[
+				"me",
+				"meta\tTag"
+			],
+			[
+				"h",
+				"html\thtml"
+			],
+			[
+				"Cu",
+				"CustomUser"
+			],
+			[
+				"f",
+				"fields"
+			],
+			[
+				"t",
+				"td\tTag"
+			],
+			[
+				"a",
+				"assertEqual"
+			],
+			[
+				"Blo",
+				"BlogDeleteView"
+			],
+			[
+				"D",
+				"DeleteView"
+			],
+			[
+				"B",
+				"BlogUpdateView"
+			],
+			[
+				"ac",
+				"action\tAttr"
+			],
+			[
+				"in",
+				"input\tTag"
+			],
+			[
+				"fo",
+				"form\tTag"
+			],
+			[
+				"Bl",
+				"BlogCreateView"
+			],
+			[
+				"as",
+				"assertTemplatedUsed"
+			],
+			[
+				"pa",
+				"padding-top\tproperty"
+			],
+			[
+				"co",
+				"color\tproperty"
+			],
+			[
+				"border-",
+				"border-bottom\tproperty"
+			],
+			[
+				"font",
+				"font-size\tproperty"
+			],
+			[
+				"l",
+				"li\tTag"
+			],
+			[
+				"u",
+				"ul\tTag"
+			],
+			[
+				"he",
+				"header\tTag"
+			],
+			[
+				"Sim",
+				"SimpleTestCase"
+			],
+			[
+				"about",
+				"about_url"
+			],
+			[
+				"Ch",
+				"ChoiceInline"
+			],
+			[
+				"Q",
+				"QuestionAdmin"
+			],
+			[
+				"time",
+				"timedelta"
+			],
+			[
+				"date",
+				"datetime"
+			],
+			[
+				"ge",
+				"generic"
+			],
+			[
+				"H",
+				"HttpResponseRedirect"
+			],
+			[
+				"qu",
+				"question_id"
+			],
+			[
+				"q",
+				"question"
+			],
+			[
+				"pub",
+				"pub_date"
+			],
+			[
+				"question",
+				"question_text"
+			],
+			[
+				"status",
+				"status_code"
+			],
+			[
+				"sub",
+				"subject_list"
+			],
+			[
+				"cre",
+				"created_at"
+			],
+			[
+				"cr",
+				"created_at"
+			],
+			[
+				"ti",
+				"ticket"
+			],
+			[
+				"P",
+				"PreetyTable"
+			],
+			[
+				"j",
+				"json"
+			],
+			[
+				"tic",
+				"tickets"
+			],
+			[
+				"p",
+				"pass_word"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: Install Package",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 150.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/LHZ/Desktop/Django/e-ci"
+	],
+	"file_history":
+	[
+		"/Users/LHZ/Desktop/Django/e-ci/e_ci_project/e_ci_project/e-ci.sublime-project",
+		"/Users/LHZ/Desktop/Django/e-ci/e_ci_project/users/views.py",
+		"/Users/LHZ/Desktop/Django/e-ci/e_ci_project/users/serializers.py",
+		"/Users/LHZ/Desktop/Django/e-ci/e_ci_project/users/models.py",
+		"/Users/LHZ/Desktop/Django/e-ci/e_ci_project/users/permissions.py",
+		"/Users/LHZ/Desktop/Django/e-ci/e_ci_project/e_ci_project/urls.py",
+		"/Users/LHZ/Desktop/Django/e-ci/e_ci_project/users/fixtures/profiles.json",
+		"/Users/LHZ/Desktop/Django/e-ci/e_ci_project/users/fixtures/skills.json",
+		"/Users/LHZ/Desktop/Django/e-ci/e_ci_project/users/fixtures/users.json",
+		"/Users/LHZ/Desktop/Django/e-ci/e_ci_project/users/urls.py",
+		"/Users/LHZ/Desktop/Django/e-ci/e_ci_project/e_ci_project/settings.py",
+		"/Users/LHZ/Desktop/Django/e-ci/eci_intern/users/models.py",
+		"/Users/LHZ/Desktop/Django/e-ci/eci_intern/users/views.py",
+		"/Users/LHZ/Desktop/Django/e-ci/eci_intern/eci_intern/settings.py",
+		"/Users/LHZ/Desktop/Django/e-ci/eci_intern/users/forms.py",
+		"/Users/LHZ/Desktop/Django/e-ci/eci_intern/templates/profile_update.html",
+		"/Users/LHZ/Desktop/Django/e-ci/eci_intern/templates/base.html",
+		"/Users/LHZ/Desktop/Django/e-ci/eci_intern/pages/views.py",
+		"/Users/LHZ/Desktop/Django/e-ci/eci_intern/pages/urls.py",
+		"/Users/LHZ/Desktop/Django/e-ci/eci_intern/eci_intern/urls.py",
+		"/Users/LHZ/Desktop/Django/e-ci/eci_intern/templates/home.html",
+		"/Users/LHZ/Desktop/Django/e-ci/eci_intern/users/urls.py",
+		"/Users/LHZ/Desktop/code challenge/Ticket_Viewer_Ethan/tickets.py",
+		"/Users/LHZ/Desktop/code challenge/Ticket-Viewer-alisha/README.txt",
+		"/Users/LHZ/Desktop/code challenge/Ticket_Viewer_Ethan/#Discription",
+		"/Users/LHZ/Desktop/code challenge/Ticket-Viewer-alisha/requirements.txt",
+		"/Users/LHZ/Desktop/code challenge/Ticket-Viewer-alisha/connect.py",
+		"/Users/LHZ/Desktop/code challenge/Ticket-Viewer-alisha/tests.py",
+		"/Users/LHZ/Desktop/code challenge/Ticket-Viewer-alisha/tickets.py",
+		"/Users/LHZ/Desktop/code challenge/Ticket_Viewer_Ethan/tickets",
+		"/Users/LHZ/Desktop/code challenge/tickets",
+		"/Users/LHZ/Desktop/code challenge/Zendesk_Ticket_Viewer-Louis/README.MD",
+		"/Users/LHZ/Desktop/code challenge/Zendesk_Ticket_Viewer-Louis/setup.py",
+		"/Users/LHZ/Desktop/code challenge/Zendesk_Ticket_Viewer-Louis/zendesk_ticket_viewer/ticket.py",
+		"/Users/LHZ/Desktop/code challenge/Zendesk_Ticket_Viewer-Louis/zendesk_ticket_viewer/api.py",
+		"/Users/LHZ/Desktop/code challenge/Zendesk_Ticket_Viewer-Louis/zendesk_ticket_viewer/__init__.py"
+	],
+	"find":
+	{
+		"height": 39.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 39.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.SublimeLinter":
+	{
+		"height": 0.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "untitled.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
