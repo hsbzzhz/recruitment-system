@@ -1,4 +1,5 @@
 from rest_framework import serializers
+from rest_framework.exceptions import ParseError
 #import the custome user model using get_user_model
 from django.contrib.auth import get_user_model
 from .models import StudentProfile, CompanyProfile, Skill, OwnedSkills, Transcript, Education, Wh, Interest, SkillTest, Policy
@@ -9,8 +10,21 @@ class UserSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = get_user_model()
         depth = 1
-        fields = ('url', 'id', 'username', 'first_name', 'last_name', 'email','user_type',
+        fields = ('url', 'id', 'username', 'password','first_name', 'last_name', 'email','user_type',
                   'is_superuser', 'is_staff')
+#overwrite the create user function for upgrade the password
+    def create(self, validated_data):
+        user = super().create(validated_data)
+        user.set_password(validated_data['password'])
+        user.save()
+        return user
+#overwrite the update user function for upgrade the password
+    def update(self, instance, validated_data):
+        for attr, value in validated_data.items():
+            if str(attr) == 'password':
+                instance.set_password(value)
+        instance.save()
+        return instance
 
 class SkillSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
@@ -23,7 +37,7 @@ class TranscriptSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
 
         model = Transcript
-        fields = ('url','id','studentprofile','transcript_name','transcript')
+        fields = ('url','id','transcript_name','transcript')
 
 class InterestSerializer(serializers.HyperlinkedModelSerializer):
 
@@ -38,14 +52,34 @@ class EducationSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
 
         model  = Education
-        fields = ('url', 'id', 'studentprofile', 'edu_name', 'qualification', 'institute', 'description')
+        fields = ('url', 'id','date_started','date_ended','edu_name', 'qualification', 'institute', 'description')
+
+    def validate(self, data):
+        """
+        Check that the start is before the stop.
+        """
+        if data['date_started'] != None and data['date_ended']!=None:
+            if data['date_started'] > data['date_ended']:
+                raise serializers.ValidationError("finish must occur after start")
+        return data
+
 
 class WhSerializer(serializers.HyperlinkedModelSerializer):
 
     class Meta:
 
         model   = Wh
-        fields  = ('url', 'id', 'studentprofile', 'work_name', 'title', 'company_name','description')
+        fields  = ('url', 'id','date_started','date_ended','work_name', 'title', 'company_name','description')
+
+    def validate(self, data):
+        """
+            Check that the start is before the stop.
+    """
+        if data['date_started'] != None and data['date_ended']!=None:
+            if data['date_started'] > data['date_ended']:
+                raise serializers.ValidationError("finish must occur after start")
+        return data
+
 
 class SkillTestSerializer(serializers.HyperlinkedModelSerializer):
 
@@ -65,37 +99,13 @@ class StudentProfileSerializer(serializers.HyperlinkedModelSerializer):
         view_name='skill-detail'
     )
     #transcript foreign key
-    transcripts = serializers.HyperlinkedIdentityField(
+    transcripts = TranscriptSerializer(many=True, read_only=True)
 
-        many=True,
-        read_only=True,
-        view_name='transcript-detail'
-    )
+    education = EducationSerializer(many=True, read_only=True)
 
+    work_history = WhSerializer(many=True, read_only=True)
 
-    education = serializers.HyperlinkedIdentityField(
-
-        many=True,
-        read_only=True,
-        view_name = 'education-detail'
-
-    )
-
-    work_history = serializers.HyperlinkedIdentityField(
-
-        many=True,
-        read_only=True,
-        view_name='wh-detail'
-
-    )
-
-    skill_test = serializers.HyperlinkedIdentityField(
-
-        many=True,
-        read_only=True,
-        view_name='skill-detail'
-
-    )
+    skill_test = SkillTestSerializer(many=True, read_only=True)
 
     chosen_interests  = serializers.HyperlinkedRelatedField(
         many      = True,
@@ -151,17 +161,10 @@ class PolicySerializer(serializers.HyperlinkedModelSerializer):
 class CompanyProfileSerializer(serializers.HyperlinkedModelSerializer):
     user = UserSerializer(read_only = True)
 
-    policies = serializers.HyperlinkedIdentityField(
-
-        many=True,
-        read_only=True,
-        view_name = 'policy-detail'
-
-    )
+    policies = PolicySerializer(many=True, read_only=True)
 
     class Meta:
         model = CompanyProfile
         depth = 1
         fields = ('url', 'id', 'user','location', 'about', 'phone', 'tax', 'image', 'linked_in_website', 
                   'twitter_website','facebook_website','policies','date_created','date_updated','user')
-

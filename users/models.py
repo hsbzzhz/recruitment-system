@@ -116,7 +116,8 @@ class Education(models.Model):
     qualification       = models.CharField(max_length = 30)
     institute           = models.CharField(max_length = 20)
     description         = models.CharField(max_length = 80, blank = True)
-
+    date_started        = models.DateField(null=True, blank=True)
+    date_ended          = models.DateField(null=True, blank=True)
 
     studentprofile      = models.ForeignKey(
         StudentProfile,
@@ -139,6 +140,8 @@ class Wh (models.Model):
     title               = models.CharField(max_length=30)
     company_name        = models.CharField(max_length=30)
     description         = models.CharField(max_length=100, blank=True)
+    date_started        = models.DateField(null=True, blank=True)
+    date_ended          = models.DateField(null=True, blank=True)
 
     studentprofile      = models.ForeignKey(
         StudentProfile,
