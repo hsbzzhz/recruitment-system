@@ -38,12 +38,13 @@ class CategorySerializer(serializers.HyperlinkedModelSerializer):
 class JobSerializer(TaggitSerializer,serializers.HyperlinkedModelSerializer):
 
     #foreign key
-    category = serializers.HyperlinkedRelatedField(
+    category = serializers.SlugRelatedField(
 
         many=True,
-        read_only=False,
-        queryset =Category.objects.all(),
-        view_name = 'category-detail'
+        #read_only=True,
+        queryset = Category.objects.all(),
+        #view_name = 'category-detail'
+        slug_field = 'cate_name'
 
     )
 
@@ -61,6 +62,13 @@ class JobSerializer(TaggitSerializer,serializers.HyperlinkedModelSerializer):
         tags = validated_data.pop('tags')
         instance = super(JobSerializer, self).create(validated_data)
         instance.tags.set(*tags)
+        """
+        #writable nested serializer on category
+        category_data = validated_data.pop('category')
+        instance = Job.object.create(**validated_data)
+        for cate in category_data:
+            Category.objects.create(instance=instance, **category_data)
+        """
         return instance
 
 

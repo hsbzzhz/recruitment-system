@@ -52,8 +52,7 @@ class SkillViewSet(viewsets.ModelViewSet):
     """
     queryset = Skill.objects.all()
     serializer_class = SkillSerializer
-    permission_classes = (permissions.IsAuthenticatedOrReadOnly,
-                          IsAdminUserOrReadOnly)
+    permission_classes = (permissions.IsAuthenticatedOrReadOnly,)
 
 class TranscriptViewSet(viewsets.ModelViewSet):
     """
@@ -63,23 +62,20 @@ class TranscriptViewSet(viewsets.ModelViewSet):
     """
     queryset = Transcript.objects.all()
     serializer_class = TranscriptSerializer
-    permission_classes = (permissions.IsAuthenticatedOrReadOnly,
-                          IsAdminUserOrReadOnly)
+    permission_classes = (permissions.IsAuthenticatedOrReadOnly,)
 
 class EducationViewSet(viewsets.ModelViewSet):
 
     queryset = Education.objects.all()
     serializer_class = EducationSerializer
-    permission_classes = (permissions.IsAuthenticatedOrReadOnly,
-                          IsAdminUserOrReadOnly)
+    permission_classes = (permissions.IsAuthenticatedOrReadOnly,)
 
 
 class WhViewSet(viewsets.ModelViewSet):
 
     queryset = Wh.objects.all()
     serializer_class = WhSerializer
-    permission_classes = (permissions.IsAuthenticatedOrReadOnly,
-                          IsAdminUserOrReadOnly)
+    permission_classes = (permissions.IsAuthenticatedOrReadOnly,)
 
 
 class InterestViewSet(viewsets.ModelViewSet):
@@ -87,21 +83,18 @@ class InterestViewSet(viewsets.ModelViewSet):
 
     queryset = Interest.objects.all()
     serializer_class = InterestSerializer
-    permission_classes = (permissions.IsAuthenticatedOrReadOnly,
-                          IsAdminUserOrReadOnly)
+    permission_classes = (permissions.IsAuthenticatedOrReadOnly,)
 
 class SkillTestViewSet(viewsets.ModelViewSet):
 
 
     queryset = SkillTest.objects.all()
     serializer_class = SkillTestSerializer
-    permission_classes = (permissions.IsAuthenticatedOrReadOnly,
-                          IsAdminUserOrReadOnly)
+    permission_classes = (permissions.IsAuthenticatedOrReadOnly,)
 
 class PolicyViewSet(viewsets.ModelViewSet):
 
 
     queryset = Policy.objects.all()
     serializer_class = PolicySerializer
-    permission_classes = (permissions.IsAuthenticatedOrReadOnly,
-                          IsAdminUserOrReadOnly)
+    permission_classes = (permissions.IsAuthenticatedOrReadOnly,)

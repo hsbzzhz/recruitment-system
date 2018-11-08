@@ -116,14 +116,13 @@ class Education(models.Model):
     qualification       = models.CharField(max_length = 30)
     institute           = models.CharField(max_length = 20)
     description         = models.CharField(max_length = 80, blank = True)
-
+    date_started        = models.DateField(null=True, blank=True)
+    date_ended          = models.DateField(null=True, blank=True)
 
     studentprofile      = models.ForeignKey(
         StudentProfile,
         on_delete       = models.CASCADE,
-        related_name    = 'education',
-        null            = True,
-        blank           = True,
+        related_name    = 'education'
     )
 
     class Meta:
@@ -135,10 +134,12 @@ class Education(models.Model):
 
 class Wh (models.Model):
 
-    work_name           = models.CharField(max_length=30)
-    title               = models.CharField(max_length=30)
-    company_name        = models.CharField(max_length=30)
+    company_name           = models.CharField(max_length=60)
+    title               = models.CharField(max_length=50)
     description         = models.CharField(max_length=100, blank=True)
+    reference           = models.CharField(max_length = 100,blank=True)
+    date_started        = models.DateField(null=True, blank=True)
+    date_ended          = models.DateField(null=True, blank=True)
 
     studentprofile      = models.ForeignKey(
         StudentProfile,
@@ -147,7 +148,7 @@ class Wh (models.Model):
     )
 
     class Meta:
-        ordering        = ['work_name']
+        ordering        = ['company_name']
 
     def __str__(self):
         return self.work_name
