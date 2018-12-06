@@ -134,6 +134,14 @@ REST_FRAMEWORK = {
        'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
        'rest_framework.authentication.BasicAuthentication',
        'rest_framework.authentication.SessionAuthentication',
+   ),
+   #pagination setting
+   'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
+   'PAGE_SIZE': 10,
+
+    # filter setting
+   'DEFAULT_FILTER_BACKENDS': (
+       'django_filters.rest_framework.DjangoFilterBackend',
    )
 }
 
@@ -196,4 +204,5 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # make the new user model path
 AUTH_USER_MODEL = 'users.CustomUser' # new
-
+# Allow specific path (AngularJS application) for cors
+CORS_ORIGIN_WHITELIST = 'localhost:4200',
