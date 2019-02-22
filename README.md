@@ -1,4 +1,3 @@
-# hyrespace
 # Recruitment system api
 
 ## 1. set up
